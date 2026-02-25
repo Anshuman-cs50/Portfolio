@@ -1,0 +1,28 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Stylized Background Shape -->
+  <rect x="10" y="10" width="80" height="80" rx="20" fill="url(#logoGradient)" filter="url(#shadow)" />
+  
+  <!-- Text AS -->
+  <text x="50" y="58" font-family="Inter, sans-serif" font-weight="800" font-size="32" fill="white" text-anchor="middle" letter-spacing="-1">AS</text>
+  
+  <!-- Subtle Accent -->
+  <circle cx="25" cy="25" r="4" fill="white" fill-opacity="0.3" />
+</svg>
