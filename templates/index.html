@@ -49,10 +49,10 @@
                             class="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
                         <a href="#skills"
                             class="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Skills</a>
-                        <a href="#projects"
-                            class="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
                         <a href="#journey"
                             class="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Experience</a>
+                        <a href="#projects"
+                            class="text-slate-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
                         <a href="#contact"
                             class="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all shadow-md hover:shadow-lg">Get
                             in Touch</a>
@@ -107,7 +107,7 @@
             </div> -->
 
             <div class="flex flex-wrap justify-center items-center gap-4">
-                <a href="#"
+                <a href="#contact"
                     class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white hover:bg-slate-50 text-slate-800 font-semibold transition-all border border-slate-200 shadow-sm hover:shadow-md flex items-center justify-center">
                     Get In Touch
                 </a>
@@ -125,15 +125,15 @@
                     class="w-12 h-12 rounded-full glass hover:bg-white text-slate-700 text-xl transition-all border border-slate-200 shadow-md hover:shadow-xl hover:shadow-slate-400/40 flex items-center justify-center">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="#" target="_blank"
+                <a href="https://www.linkedin.com/in/singularityanshuman" target="_blank"
                     class="w-12 h-12 rounded-full glass hover:bg-white text-blue-700 text-xl transition-all border border-slate-200 shadow-md hover:shadow-xl hover:shadow-blue-500/40 flex items-center justify-center">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="mailto:your.email@example.com"
+                <a href="mailto:anshumansingh0802@gmail.com"
                     class="w-12 h-12 rounded-full glass hover:bg-white text-slate-700 text-xl transition-all border border-slate-200 shadow-md hover:shadow-xl hover:shadow-slate-400/40 flex items-center justify-center">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <a href="#" target="_blank"
+                <a href="https://www.hackerrank.com/profile/anshumansingh083" target="_blank"
                     class="w-12 h-12 rounded-full glass hover:bg-white text-green-600 text-xl transition-all border border-slate-200 shadow-md hover:shadow-xl hover:shadow-green-500/40 flex items-center justify-center">
                     <i class="fab fa-hackerrank"></i>
                 </a>
@@ -160,13 +160,8 @@
                         <div
                             class="relative bg-white p-2 rounded-3xl shadow-2xl border border-slate-200 overflow-hidden">
                             <!-- Placeholder for profile image -->
-                            <div
-                                class="w-80 h-96 bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl flex items-center justify-center">
-                                <div class="text-center">
-                                    <i class="fas fa-user text-6xl text-slate-400 mb-4"></i>
-                                    <p class="text-sm text-slate-500 font-medium">Profile Image</p>
-                                </div>
-                            </div>
+                            <img src="{{ url_for('static', filename='img/1772001419972.png') }}" alt="Anshuman Singh"
+                                class="w-80 h-96 object-cover rounded-2xl">
                         </div>
 
                         <!-- Decorative Elements -->
@@ -213,19 +208,19 @@
                         <div class="grid grid-cols-2 gap-4 pt-6">
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
                                 <div class="text-3xl font-bold text-blue-600 mb-1">2023</div>
-                                <div class="text-sm text-slate-600 font-medium">Started B.Tech Journey</div>
+                                <div class="text-sm text-slate-600 font-medium">B.Tech CSE Student</div>
                             </div>
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
-                                <div class="text-3xl font-bold text-violet-600 mb-1">10+</div>
-                                <div class="text-sm text-slate-600 font-medium">Projects Completed</div>
+                                <div class="text-3xl font-bold text-violet-600 mb-1">20+</div>
+                                <div class="text-sm text-slate-600 font-medium">Projects Built</div>
                             </div>
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
                                 <div class="text-3xl font-bold text-emerald-600 mb-1">1st</div>
-                                <div class="text-sm text-slate-600 font-medium">National Hackathon</div>
+                                <div class="text-sm text-slate-600 font-medium">Hackathon Winner</div>
                             </div>
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
-                                <div class="text-3xl font-bold text-amber-600 mb-1">AI/ML</div>
-                                <div class="text-sm text-slate-600 font-medium">Core Specialization</div>
+                                <div class="text-3xl font-bold text-amber-600 mb-1">10+</div>
+                                <div class="text-sm text-slate-600 font-medium">AI Models Deployed</div>
                             </div>
                         </div>
                     </div>
@@ -563,7 +558,7 @@
                                 <i
                                     class="fas fa-arrow-right ml-2 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all"></i>
                             </a>
-                            <a href="#"
+                            <a href="https://github.com/Anshuman-cs50/DocAI" target="_blank"
                                 class="px-6 py-3 bg-white border-2 border-slate-200 text-slate-700 hover:border-blue-200 hover:bg-blue-50 rounded-xl font-bold transition-all flex items-center">
                                 <i class="fas fa-play-circle mr-2 text-blue-600 text-lg"></i> Live Demo
                             </a>
@@ -975,14 +970,12 @@
             </form>
 
             <div class="flex justify-center space-x-8 text-2xl text-slate-400">
-                <a href="#" class="hover:text-blue-600 hover:scale-110 transition-all"><i
-                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/singularityanshuman" target="_blank"
+                    class="hover:text-blue-600 hover:scale-110 transition-all"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/Anshuman-cs50" target="_blank"
                     class="hover:text-slate-900 hover:scale-110 transition-all"><i class="fab fa-github"></i></a>
-                <a href="#" class="hover:text-blue-400 hover:scale-110 transition-all"><i
-                        class="fab fa-twitter"></i></a>
-                <a href="#" class="hover:text-red-500 hover:scale-110 transition-all"><i
-                        class="fas fa-envelope"></i></a>
+                <a href="mailto:anshumansingh0802@gmail.com"
+                    class="hover:text-red-500 hover:scale-110 transition-all"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </section>
