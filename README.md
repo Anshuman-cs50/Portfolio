@@ -1,4 +1,4 @@
-# Anshuman Singh - AI & ML Portfolio
+# Anshuman Singh - Portfolio
 
 Welcome to my digital space. This portfolio is a curated showcase of my journey, passion, and work in the field of Artificial Intelligence and Machine Learning. It serves as a window into my professional growth and the projects I have brought to life.
 
