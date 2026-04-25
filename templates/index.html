@@ -161,7 +161,8 @@
                         <div
                             class="relative bg-white p-2 rounded-3xl shadow-2xl border border-slate-200 overflow-hidden">
                             <!-- Placeholder for profile image -->
-                            <img src="{{ url_for('static', filename='img/1772001419972.png') }}" alt="Anshuman Singh"
+                            <img src="{{ url_for('static', filename='img/AnshumanSingh.png') }}"
+                                alt="Anshuman Singh"
                                 class="w-80 h-96 object-cover rounded-2xl">
                         </div>
 
@@ -422,6 +423,7 @@
         </div> <!-- End of Max w-7xl -->
     </section>
 
+
     <!-- Journey Section -->
     <section id="journey" class="py-24 px-4 bg-slate-50 relative overflow-hidden -mt-12 pt-32">
         <div class="max-w-5xl mx-auto">
@@ -455,6 +457,15 @@
                                     streams, enabling real-time interaction between user physical inputs and AI-powered
                                     game logic.</li>
                             </ul>
+
+                            <!-- View Certificate Button -->
+                            <div class="mt-8 md:text-right">
+                                <button onclick="openCertificateModal('AI-ML Virtual Internship', 'EduSkills (supported by Google for Developers & AICTE)', 'January - March 2026', 'Completed a 10-week intensive virtual internship focused on practical AI/ML implementation.', 'false', '{{ url_for('static', filename='img/certificates/AI-ML Virtual Internship.png') }}')" 
+                                        class="inline-flex items-center gap-3 bg-slate-900 hover:bg-slate-800 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-md hover:shadow-xl transform hover:-translate-y-1 group/btn">
+                                    <span>View Credential</span>
+                                    <i class="fas fa-certificate text-xs opacity-70 group-hover:rotate-12 transition-transform"></i>
+                                </button>
+                            </div>
 
                             <!-- Arrow -->
                             <div
@@ -509,6 +520,7 @@
         </div>
     </section>
 
+
     <!-- Projects Section -->
     <section id="projects" class="py-24 px-4 bg-white relative">
         <div class="max-w-7xl mx-auto">
@@ -521,7 +533,7 @@
 
                 <!-- Project 1: DocAI -->
                 <div
-                    class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col-reverse lg:flex-row group h-auto lg:h-96">
+                    class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col-reverse lg:flex-row group h-auto lg:min-h-[24rem]">
                     <!-- Left Side: Info -->
                     <div class="w-full lg:w-3/5 p-8 md:p-12 flex flex-col justify-center relative z-10 bg-white">
                         <div class="mb-4">
@@ -533,22 +545,32 @@
                             DocAI
                         </h3>
                         <p class="text-lg text-slate-600 mb-6 leading-relaxed max-w-xl">
-                            End-to-End Healthcare Assistant bridging the gap between powerful medical AI models and
-                            highly accessible interfaces.
-                            Features a Kotlin Android frontend and scalable Flask backend.
+                            A medical intelligence platform built with React (Vite) and Flask, featuring a dynamic ReAct
+                            Agent architecture. DocAI leverages MedGemma-4b for agentic reasoning and Qwen2.5-7B for
+                            background clinical analysis, backed by PostgreSQL + pgvector for precise BioBERT embedding
+                            retrieval.
                         </p>
 
                         <!-- Key Features -->
                         <div class="flex flex-wrap gap-2 mb-8">
                             <span
                                 class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
-                                Kotlin Application</span>
+                                React (Vite)</span>
                             <span
                                 class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
-                                Flask Backend</span>
+                                PostgreSQL + pgvector</span>
                             <span
                                 class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
-                                RAG</span>
+                                BioBERT (768D)</span>
+                            <span
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                MedGemma-4b-it</span>
+                            <span
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                Qwen2.5-7B</span>
+                            <span
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                ReAct Agent</span>
                         </div>
 
                         <!-- Buttons -->
@@ -559,7 +581,7 @@
                                 <i
                                     class="fas fa-arrow-right ml-2 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all"></i>
                             </a>
-                            <a href="https://github.com/Anshuman-cs50/DocAI" target="_blank"
+                            <a href="https://doc-ai-taupe.vercel.app" target="_blank"
                                 class="px-6 py-3 bg-white border-2 border-slate-200 text-slate-700 hover:border-blue-200 hover:bg-blue-50 rounded-xl font-bold transition-all flex items-center">
                                 <i class="fas fa-play-circle mr-2 text-blue-600 text-lg"></i> Live Demo
                             </a>
@@ -568,17 +590,14 @@
 
                     <!-- Right Side: Snapshot Placeholder -->
                     <div
-                        class="w-full lg:w-2/5 md:min-h-[300px] bg-gradient-to-br from-blue-50 to-indigo-100 relative overflow-hidden flex items-center justify-center border-l border-slate-100">
+                        class="w-full lg:w-2/5 md:min-h-[300px] bg-gradient-to-br from-blue-50 to-indigo-100 relative overflow-hidden flex items-center justify-center border-l border-slate-100 p-8">
                         <div class="absolute inset-0 pattern-grid-lg opacity-5 text-blue-500"></div>
                         <div
-                            class="transform rotate-6 hover:rotate-0 transition-transform duration-700 hover:scale-105">
-                            <div class="bg-white p-2 rounded-xl shadow-2xl border border-slate-200/60 max-w-[280px]">
-                                <!-- Simulate App Screenshot -->
-                                <div
-                                    class="bg-slate-50 rounded-lg p-4 h-40 flex flex-col items-center justify-center text-center">
-                                    <i class="fas fa-heartbeat text-5xl text-blue-500 mb-2"></i>
-                                    <span class="text-xs font-bold text-slate-400">System Architecture</span>
-                                </div>
+                            class="transform rotate-3 hover:rotate-0 transition-transform duration-700 hover:scale-110 w-full max-w-[450px]">
+                            <div class="bg-white p-2 rounded-xl shadow-2xl border border-slate-200/60 w-full">
+                                <img src="{{ url_for('static', filename='img/DocAI.png') }}" 
+                                     alt="DocAI Preview" 
+                                     class="w-full h-auto rounded-lg object-cover" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -586,7 +605,7 @@
 
                 <!-- Project 2: AI Timetable Generator -->
                 <div
-                    class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col-reverse lg:flex-row group h-auto lg:h-97">
+                    class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col-reverse lg:flex-row group h-auto lg:min-h-[24rem]">
                     <!-- Left Side: Info -->
                     <div class="w-full lg:w-3/5 p-8 md:p-12 flex flex-col justify-center relative z-10 bg-white">
                         <div class="mb-4">
@@ -636,63 +655,177 @@
 
                     <!-- Right Side: Snapshot -->
                     <div
-                        class="w-full lg:w-2/5 md:min-h-[300px] bg-gradient-to-br from-indigo-50 to-blue-100 relative overflow-hidden flex items-center justify-center border-l border-slate-100">
+                        class="w-full lg:w-2/5 md:min-h-[300px] bg-gradient-to-br from-indigo-50 to-blue-100 relative overflow-hidden flex items-center justify-center border-l border-slate-100 p-8">
                         <div class="absolute inset-0 pattern-grid-lg opacity-5 text-indigo-500"></div>
                         <div
-                            class="transform -rotate-6 hover:rotate-0 transition-transform duration-700 hover:scale-105">
-                            <div class="bg-white p-2 rounded-xl shadow-2xl border border-slate-200/60 max-w-[280px]">
-                                <div
-                                    class="bg-slate-50 rounded-lg p-4 h-40 flex flex-col items-center justify-center text-center">
-                                    <i class="fas fa-calendar-alt text-5xl text-indigo-500 mb-2"></i>
-                                    <span class="text-xs font-bold text-slate-400">Optimal Scheduling</span>
-                                </div>
+                            class="transform -rotate-3 hover:rotate-0 transition-transform duration-700 hover:scale-110 w-full max-w-[450px]">
+                            <div class="bg-white p-2 rounded-xl shadow-2xl border border-slate-200/60 w-full">
+                                <img src="{{ url_for('static', filename='img/TimetableGenerator.png') }}" 
+                                     alt="AI Timetable Generator Preview" 
+                                     class="w-full h-auto rounded-lg object-cover" loading="lazy">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3: Predictive Analytics -->
+                <!-- Project 3: Traffic Sign Recognition -->
                 <div
-                    class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col-reverse lg:flex-row group h-auto lg:h-96">
+                    class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col-reverse lg:flex-row group h-auto lg:min-h-[24rem]">
                     <!-- Left Side: Info -->
                     <div class="w-full lg:w-3/5 p-8 md:p-12 flex flex-col justify-center relative z-10 bg-white">
                         <div class="mb-4">
                             <span
-                                class="text-emerald-600 font-bold tracking-widest text-xs uppercase bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">Data
-                                Science</span>
+                                class="text-red-600 font-bold tracking-widest text-xs uppercase bg-red-50 px-3 py-1 rounded-full border border-red-100">Computer Vision</span>
                         </div>
                         <h3
-                            class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 group-hover:text-emerald-600 transition-colors tracking-tight leading-none">
-                            Predictive Suite
+                            class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 group-hover:text-red-600 transition-colors tracking-tight leading-none">
+                            Traffic Sign Recognition
                         </h3>
                         <p class="text-lg text-slate-600 mb-6 leading-relaxed max-w-xl">
-                            Advanced EDA and predictive modeling on complex datasets. Uncovering hidden patterns and
-                            visualizing actionable insights using Python's data stack.
+                            A deep learning system for high-accuracy recognition and classification of 43 different traffic sign categories. Built with a custom Convolutional Neural Network (CNN) architecture using TensorFlow and OpenCV, trained on the GTSRB dataset.
                         </p>
 
                         <!-- Key Features -->
                         <div class="flex flex-wrap gap-2 mb-8">
                             <span
-                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">Pandas
-                                & NumPy</span>
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                TensorFlow/Keras</span>
                             <span
-                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">Scikit-Learn</span>
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                OpenCV</span>
                             <span
-                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">Matplotlib
-                                Viz</span>
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                CNN Architecture</span>
+                            <span
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                GTSRB Dataset</span>
                         </div>
 
                         <!-- Buttons -->
                         <div class="flex flex-wrap gap-4 mt-auto">
-                            <a href="#"
+                            <a href="https://github.com/Anshuman-cs50/Traffic-Sign-Recognition" target="_blank"
                                 class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-xl font-bold transition-all shadow-md flex items-center group/btn">
                                 <i class="fab fa-github mr-2 text-lg"></i> GitHub Code
                                 <i
                                     class="fas fa-arrow-right ml-2 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all"></i>
                             </a>
-                            <a href="#"
-                                class="px-6 py-3 bg-white border-2 border-slate-200 text-slate-700 hover:border-emerald-200 hover:bg-emerald-50 rounded-xl font-bold transition-all flex items-center">
-                                <i class="fas fa-play-circle mr-2 text-emerald-600 text-lg"></i> Live Demo
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Snapshot -->
+                    <div
+                        class="w-full lg:w-2/5 md:min-h-[300px] bg-gradient-to-br from-red-50 to-orange-100 relative overflow-hidden flex items-center justify-center border-l border-slate-100 p-8">
+                        <div class="absolute inset-0 pattern-grid-lg opacity-5 text-red-500"></div>
+                        <div
+                            class="transform rotate-3 hover:rotate-0 transition-transform duration-700 hover:scale-110 w-full max-w-[450px]">
+                            <div class="bg-white p-2 rounded-xl shadow-2xl border border-slate-200/60 w-full">
+                                <img src="{{ url_for('static', filename='img/TrafficSignRecognition.png') }}" 
+                                     alt="Traffic Sign Recognition Preview" 
+                                     class="w-full h-auto rounded-lg object-cover" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Civic Behaviour Monitoring System (CBMS) -->
+                <div
+                    class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col-reverse lg:flex-row group h-auto lg:min-h-[24rem]">
+                    <!-- Left Side: Info -->
+                    <div class="w-full lg:w-3/5 p-8 md:p-12 flex flex-col justify-center relative z-10 bg-white">
+                        <div class="mb-4">
+                            <span
+                                class="text-blue-600 font-bold tracking-widest text-xs uppercase bg-blue-50 px-3 py-1 rounded-full border border-blue-100">Smart City / AI</span>
+                        </div>
+                        <h3
+                            class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors tracking-tight leading-none">
+                            CBMS
+                        </h3>
+                        <p class="text-lg text-slate-600 mb-6 leading-relaxed max-w-xl">
+                            An advanced hybrid-architecture computer vision pipeline designed to track individuals and detect civic offences in near real-time. Features dual dashboards (Admin & User Hub) with automated evidence generation and 3D skeletal behavior classification.
+                        </p>
+
+                        <!-- Key Features -->
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                YOLOv8 + ByteTrack</span>
+                            <span
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                InsightFace (Face ID)</span>
+                            <span
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                MediaPipe + Bi-GRU</span>
+                            <span
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                Hybrid Cloud-Edge</span>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="flex flex-wrap gap-4 mt-auto">
+                            <a href="https://github.com/Anshuman-cs50/Civic-Behaviour-Monitoring-System" target="_blank"
+                                class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-xl font-bold transition-all shadow-md flex items-center group/btn">
+                                <i class="fab fa-github mr-2 text-lg"></i> GitHub Code
+                                <i
+                                    class="fas fa-arrow-right ml-2 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Snapshot -->
+                    <div
+                        class="w-full lg:w-2/5 md:min-h-[300px] bg-gradient-to-br from-blue-50 to-indigo-100 relative overflow-hidden flex items-center justify-center border-l border-slate-100 p-8">
+                        <div class="absolute inset-0 pattern-grid-lg opacity-5 text-blue-500"></div>
+                        <div
+                            class="transform -rotate-3 hover:rotate-0 transition-transform duration-700 hover:scale-110 w-full max-w-[450px]">
+                            <div class="bg-white p-2 rounded-xl shadow-2xl border border-slate-200/60 w-full">
+                                <img src="{{ url_for('static', filename='img/CBMS.png') }}" 
+                                     alt="CBMS Preview" 
+                                     class="w-full h-auto rounded-lg object-cover" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Edge AI Optimization -->
+                <div
+                    class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col-reverse lg:flex-row group h-auto lg:min-h-[24rem]">
+                    <!-- Left Side: Info -->
+                    <div class="w-full lg:w-3/5 p-8 md:p-12 flex flex-col justify-center relative z-10 bg-white">
+                        <div class="mb-4">
+                            <span
+                                class="text-emerald-600 font-bold tracking-widest text-xs uppercase bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">Edge ML / Optimization</span>
+                        </div>
+                        <h3
+                            class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 group-hover:text-emerald-600 transition-colors tracking-tight leading-none">
+                            Edge AI Optimization
+                        </h3>
+                        <p class="text-lg text-slate-600 mb-6 leading-relaxed max-w-xl">
+                            A complete pipeline for compressing deep learning models using INT8 Post-Training Quantization. Reduces MobileNetV2 storage footprint by ~70% while maintaining inference accuracy for deployment on memory-constrained IoT and mobile devices.
+                        </p>
+
+                        <!-- Key Features -->
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                TensorFlow Lite</span>
+                            <span
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                Post-Training Quantization</span>
+                            <span
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                INT8 Weight Mapping</span>
+                            <span
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                MobileNetV2</span>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="flex flex-wrap gap-4 mt-auto">
+                            <a href="https://github.com/Anshuman-cs50/Edge-AI-Optimization-Post-Training-INT8-Quantization-with-MobileNetV2" target="_blank"
+                                class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-xl font-bold transition-all shadow-md flex items-center group/btn">
+                                <i class="fab fa-github mr-2 text-lg"></i> GitHub Code
+                                <i
+                                    class="fas fa-arrow-right ml-2 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all"></i>
                             </a>
                         </div>
                     </div>
@@ -706,77 +839,74 @@
                             <div class="bg-white p-2 rounded-xl shadow-2xl border border-slate-200/60 max-w-[280px]">
                                 <div
                                     class="bg-slate-50 rounded-lg p-4 h-40 flex flex-col items-center justify-center text-center">
-                                    <i class="fas fa-chart-line text-5xl text-emerald-500 mb-2"></i>
-                                    <span class="text-xs font-bold text-slate-400">Model Performance</span>
+                                    <i class="fas fa-microchip text-5xl text-emerald-500 mb-2"></i>
+                                    <span class="text-xs font-bold text-slate-400">Model Compression</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 4: Vision Transformer -->
+                <!-- Project 6: Product Image Search -->
                 <div
-                    class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col-reverse lg:flex-row group h-auto lg:h-96">
+                    class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col-reverse lg:flex-row group h-auto lg:min-h-[24rem]">
                     <!-- Left Side: Info -->
                     <div class="w-full lg:w-3/5 p-8 md:p-12 flex flex-col justify-center relative z-10 bg-white">
                         <div class="mb-4">
                             <span
-                                class="text-amber-600 font-bold tracking-widest text-xs uppercase bg-amber-50 px-3 py-1 rounded-full border border-amber-100">Computer
-                                Vision</span>
+                                class="text-amber-600 font-bold tracking-widest text-xs uppercase bg-amber-50 px-3 py-1 rounded-full border border-amber-100">Mobile / Computer Vision</span>
                         </div>
                         <h3
                             class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 group-hover:text-amber-600 transition-colors tracking-tight leading-none">
-                            Vision Transformer
+                            Product Image Search
                         </h3>
                         <p class="text-lg text-slate-600 mb-6 leading-relaxed max-w-xl">
-                            Implementation of state-of-the-art Vision Transformers (ViT) for image classification.
-                            Experimenting with self-attention mechanisms and patch embeddings.
+                            An Android application leveraging Google's ML Kit to identify fashion products in real-time. Features interactive object selection, dynamic image processing, and integration with Vision Product Search for instant visual results.
                         </p>
 
                         <!-- Key Features -->
                         <div class="flex flex-wrap gap-2 mb-8">
                             <span
-                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">PyTorch</span>
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                Kotlin</span>
                             <span
-                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">Attention
-                                Mechanism</span>
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                Google ML Kit</span>
                             <span
-                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">OpenCV</span>
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                Object Detection</span>
+                            <span
+                                class="px-4 py-1.5 bg-slate-50 border border-slate-200 text-slate-700 text-sm font-medium rounded-full shadow-sm">
+                                Vision Search API</span>
                         </div>
 
                         <!-- Buttons -->
                         <div class="flex flex-wrap gap-4 mt-auto">
-                            <a href="#"
+                            <a href="https://github.com/Anshuman-cs50/Image-search" target="_blank"
                                 class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-xl font-bold transition-all shadow-md flex items-center group/btn">
                                 <i class="fab fa-github mr-2 text-lg"></i> GitHub Code
                                 <i
                                     class="fas fa-arrow-right ml-2 opacity-0 group-hover/btn:opacity-100 group-hover/btn:translate-x-1 transition-all"></i>
-                            </a>
-                            <a href="#"
-                                class="px-6 py-3 bg-white border-2 border-slate-200 text-slate-700 hover:border-amber-200 hover:bg-amber-50 rounded-xl font-bold transition-all flex items-center">
-                                <i class="fas fa-play-circle mr-2 text-amber-600 text-lg"></i> Live Demo
                             </a>
                         </div>
                     </div>
 
                     <!-- Right Side: Snapshot -->
                     <div
-                        class="w-full lg:w-2/5 md:min-h-[300px] bg-gradient-to-br from-amber-50 to-orange-100 relative overflow-hidden flex items-center justify-center border-l border-slate-100">
+                        class="w-full lg:w-2/5 md:min-h-[300px] bg-gradient-to-br from-amber-50 to-orange-100 relative overflow-hidden flex items-center justify-center border-l border-slate-100 p-8">
                         <div class="absolute inset-0 pattern-grid-lg opacity-5 text-amber-500"></div>
                         <div
-                            class="transform -rotate-12 hover:rotate-0 transition-transform duration-700 hover:scale-105">
-                            <div class="bg-white p-2 rounded-xl shadow-2xl border border-slate-200/60 max-w-[280px]">
-                                <div
-                                    class="bg-slate-50 rounded-lg p-4 h-40 flex flex-col items-center justify-center text-center">
-                                    <i class="fas fa-eye text-5xl text-amber-500 mb-2"></i>
-                                    <span class="text-xs font-bold text-slate-400">Attention Maps</span>
-                                </div>
+                            class="transform rotate-3 hover:rotate-0 transition-transform duration-700 hover:scale-110 w-full max-w-[450px]">
+                            <div class="bg-white p-2 rounded-xl shadow-2xl border border-slate-200/60 w-full">
+                                <img src="{{ url_for('static', filename='img/ProductImageSearch.png') }}" 
+                                     alt="Product Image Search Preview" 
+                                     class="w-full h-auto rounded-lg object-cover" loading="lazy">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 5th Box: Mini Games Section -->
+                <!-- 7th Box: Mini Games Section -->
                 <div
                     class="bg-slate-900 rounded-3xl overflow-hidden shadow-2xl border border-slate-800 p-8 md:p-12 relative group">
                     <!-- Background Decoration -->
@@ -795,11 +925,6 @@
                                 </h3>
                                 <p class="text-slate-400 text-lg">Interactive mini-games powered by classic AI
                                     algorithms.</p>
-                            </div>
-                            <div class="hidden md:block">
-                                <span
-                                    class="px-4 py-2 bg-slate-800 text-slate-300 rounded-lg text-sm font-mono border border-slate-700">Level:
-                                    Expert</span>
                             </div>
                         </div>
 
@@ -886,48 +1011,96 @@
     <!-- Awards & Achievements Section -->
     <section id="awards" class="py-24 px-4 bg-slate-50">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-slate-900">Awards & <span
+            <h2 class="text-3xl md:text-5xl font-bold text-center mb-16 text-slate-900 tracking-tight">Awards & <span
                     class="text-amber-500">Achievements</span></h2>
 
-            <div class="flex overflow-x-auto pb-8 space-x-6 snap-x snap-mandatory scrollbar-hide">
-                <!-- Achievement 1 -->
-                <div
-                    class="min-w-[300px] md:min-w-[400px] snap-center bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300">
-                    <div
-                        class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-xl mb-6">
-                        <i class="fas fa-trophy"></i>
+            <!-- Hackathons Subsection -->
+            <div class="mb-20">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="h-px flex-1 bg-slate-200"></div>
+                    <h3 class="text-2xl font-bold text-slate-400 uppercase tracking-widest text-sm">Hackathons</h3>
+                    <div class="h-px flex-1 bg-slate-200"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {% for hack in achievements.hackathons %}
+                    <div class="group relative bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer"
+                         onclick="openCertificateModal('{{ hack.title }}', '{{ hack.organization }}', '{{ hack.date }}', '{{ hack.description }}', '{{ hack.link or '' }}', '{{ url_for('static', filename='img/certificates/' + hack.image) }}')">
+                        <!-- Hackathon Snapshot -->
+                        <div class="aspect-[4/3] bg-slate-50 relative overflow-hidden">
+                            {% if hack.image %}
+                            <img src="{{ url_for('static', filename='img/certificates/' + hack.image) }}" 
+                                 alt="{{ hack.title }}"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            {% else %}
+                            <div class="w-full h-full flex items-center justify-center text-slate-300">
+                                <i class="fas fa-trophy text-5xl"></i>
+                            </div>
+                            {% endif %}
+                            
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <div class="bg-white/90 px-6 py-3 rounded-full text-slate-900 font-bold shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                                    View Details
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Info -->
+                        <div class="p-6">
+                            <h4 class="font-bold text-slate-900 line-clamp-1 mb-2 text-lg">{{ hack.title }}</h4>
+                            <div class="flex justify-between items-center">
+                                <p class="text-xs text-slate-500 font-bold uppercase tracking-wider">{{ hack.organization }}</p>
+                                <p class="text-xs text-amber-600 font-bold uppercase">{{ hack.date }}</p>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Hackathon Winner</h3>
-                    <p class="text-slate-500 text-sm mb-4">National Level • 2024</p>
-                    <p class="text-slate-600">Secured 1st place in the National Hackathon for building Team Sahyog,
-                        demonstrating exceptional problem-solving.</p>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Certifications Subsection -->
+            <div>
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="h-px flex-1 bg-slate-200"></div>
+                    <h3 class="text-2xl font-bold text-slate-400 uppercase tracking-widest text-sm">Certifications</h3>
+                    <div class="h-px flex-1 bg-slate-200"></div>
                 </div>
 
-                <!-- Achievement 2 -->
-                <div
-                    class="min-w-[300px] md:min-w-[400px] snap-center bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300">
-                    <div
-                        class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl mb-6">
-                        <i class="fas fa-certificate"></i>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {% for cert in achievements.certifications %}
+                    <div class="group relative bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer"
+                         onclick="openCertificateModal('{{ cert.title }}', '{{ cert.organization }}', '{{ cert.date }}', '{{ cert.description }}', '{{ cert.link or '' }}', '{{ url_for('static', filename='img/certificates/' + cert.image) }}')">
+                        <!-- Certificate Snapshot -->
+                        <div class="aspect-[4/3] bg-slate-50 relative overflow-hidden">
+                            {% if cert.image %}
+                            <img src="{{ url_for('static', filename='img/certificates/' + cert.image) }}" 
+                                 alt="{{ cert.title }}"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            {% else %}
+                            <div class="w-full h-full flex items-center justify-center text-slate-300">
+                                <i class="fas fa-certificate text-5xl"></i>
+                            </div>
+                            {% endif %}
+                            
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <div class="bg-white/90 px-6 py-3 rounded-full text-slate-900 font-bold shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                                    View Details
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Cert Info (Stripped Description) -->
+                        <div class="p-6">
+                            <h4 class="font-bold text-slate-900 line-clamp-1 mb-2 text-lg">{{ cert.title }}</h4>
+                            <div class="flex justify-between items-center">
+                                <p class="text-xs text-slate-500 font-bold uppercase tracking-wider">{{ cert.organization }}</p>
+                                <p class="text-xs text-amber-600 font-bold uppercase">{{ cert.date }}</p>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Deep Learning Specialization</h3>
-                    <p class="text-slate-500 text-sm mb-4">Coursera / DeepLearning.AI</p>
-                    <p class="text-slate-600">Completed the 5-course specialization, mastering Neural Networks,
-                        CNNs,
-                        RNNs, and Transformers.</p>
-                </div>
-
-                <!-- Achievement 3 (Placeholder) -->
-                <div
-                    class="min-w-[300px] md:min-w-[400px] snap-center bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300">
-                    <div
-                        class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-xl mb-6">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Open Source Contributor</h3>
-                    <p class="text-slate-500 text-sm mb-4">GitHub</p>
-                    <p class="text-slate-600">Actively contributing to open-source AI libraries and frameworks to
-                        improve accessibility.</p>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -986,6 +1159,47 @@
         <p>&copy; 2024 Anshuman Singh. Built with Flask & Tailwind.</p>
     </footer>
 
+    <!-- Certificate Modal -->
+    <div id="certModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 md:p-8">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-slate-900/90 backdrop-blur-md transition-opacity duration-500" onclick="closeCertificateModal()"></div>
+        
+        <!-- Modal Content -->
+        <div class="relative bg-white w-full max-w-6xl rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row transform transition-all duration-500 scale-95 opacity-0" id="modalContainer">
+            <!-- Close Button -->
+            <button onclick="closeCertificateModal()" class="absolute top-6 right-6 z-10 w-10 h-10 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-full flex items-center justify-center transition-colors">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- Left: Image -->
+            <div class="w-full md:w-2/3 bg-slate-50 flex items-center justify-center p-4 md:p-8">
+                <img id="modalImage" src="" alt="Certificate" class="max-w-full max-h-[80vh] shadow-2xl rounded-lg">
+            </div>
+
+            <!-- Right: Details -->
+            <div class="w-full md:w-1/3 p-8 md:p-12 flex flex-col justify-center bg-white border-l border-slate-100">
+                <div class="mb-8">
+                    <p class="text-amber-600 font-bold uppercase tracking-widest text-xs mb-4" id="modalDate"></p>
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2 leading-tight" id="modalTitle"></h3>
+                    <p class="text-slate-500 font-semibold mb-6" id="modalOrg"></p>
+                    <div class="h-1 w-20 bg-amber-500 rounded-full"></div>
+                </div>
+                
+                <div class="mb-10">
+                    <h4 class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-3">Description</h4>
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base" id="modalDesc"></p>
+                </div>
+
+                <div id="modalLinkContainer" class="mt-auto">
+                    <a id="modalLink" href="#" target="_blank" class="inline-flex items-center gap-3 bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        <span>Verify Credential</span>
+                        <i class="fas fa-external-link-alt text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Simple Scroll Reveal Script -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -1010,6 +1224,57 @@
                 section.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700', 'ease-out');
                 observer.observe(section);
             });
+        });
+
+        // Certificate Modal Logic
+        function openCertificateModal(title, org, date, desc, link, imgSrc) {
+            const modal = document.getElementById('certModal');
+            const container = document.getElementById('modalContainer');
+            
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalOrg').innerText = org;
+            document.getElementById('modalDate').innerText = date;
+            document.getElementById('modalDesc').innerText = desc;
+            document.getElementById('modalImage').src = imgSrc;
+            
+            const linkBtn = document.getElementById('modalLink');
+            if (link && link !== 'None' && link !== 'false') {
+                linkBtn.href = link;
+                document.getElementById('modalLinkContainer').classList.remove('hidden');
+            } else {
+                document.getElementById('modalLinkContainer').classList.add('hidden');
+            }
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            // Trigger animation
+            setTimeout(() => {
+                container.classList.remove('scale-95', 'opacity-0');
+                container.classList.add('scale-100', 'opacity-100');
+            }, 10);
+            
+            // Prevent body scroll
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCertificateModal() {
+            const modal = document.getElementById('certModal');
+            const container = document.getElementById('modalContainer');
+            
+            container.classList.remove('scale-100', 'opacity-100');
+            container.classList.add('scale-95', 'opacity-0');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            }, 500);
+        }
+
+        // Close on ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeCertificateModal();
         });
     </script>
 </body>

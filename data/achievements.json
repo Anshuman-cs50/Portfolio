@@ -1,0 +1,266 @@
+{
+    "hackathons": [
+        {
+            "id": "hack-1",
+            "title": "University Hackathon Winner",
+            "organization": "Haridwar University",
+            "year": "2024",
+            "date": "April 2024",
+            "description": "Secured 1st place in the University-level Hackathon for building Team SaarthiHub, demonstrating exceptional problem-solving and technical architecting skills.",
+            "image": "Hackathon Winner.png",
+            "link": false
+        }
+    ],
+    "certifications": [
+        {
+            "id": "cert-8",
+            "title": "CS50x: Introduction to Computer Science",
+            "organization": "Harvard University",
+            "year": "2024",
+            "date": "2024",
+            "link": "https://cs50.harvard.edu/certificates/b66d2d16-9558-4b5a-963d-c86e26caa5a6",
+            "description": "Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.",
+            "image": "CS50x.png"
+        },
+        {
+            "id": "cert-7",
+            "title": "CS50's Introduction to Artificial Intelligence with Python",
+            "organization": "Harvard University",
+            "year": "2025",
+            "date": "2025",
+            "link": "https://cs50.harvard.edu/certificates/f7c67f70-e70e-438d-a32b-8f762934d137",
+            "description": "Exploration of the concepts and algorithms at the foundation of modern artificial intelligence.",
+            "image": "CS50AI.png"
+        },
+        {
+            "id": "cert-2",
+            "title": "AI-ML Virtual Internship",
+            "organization": "EduSkills (supported by Google for Developers & AICTE)",
+            "year": "2026",
+            "date": "January - March 2026",
+            "link": false,
+            "description": "Completed a 10-week intensive virtual internship focused on practical AI/ML implementation.",
+            "image": "AI-ML Virtual Internship.png"
+        },
+        {
+            "id": "cert-24",
+            "title": "Python for Data Science",
+            "organization": "NPTEL (IIT Madras)",
+            "year": "2026",
+            "date": "Jan-Feb 2026",
+            "link": false,
+            "description": "Advanced Python programming for data science applications, certified by NPTEL.",
+            "image": "NOC26CS80S36710003803194642.png"
+        },
+        {
+            "id": "cert-9",
+            "title": "CyberOps Associate",
+            "organization": "Cisco Networking Academy",
+            "year": "2026",
+            "date": "March 27, 2026",
+            "link": false,
+            "description": "Developed skills to monitor, detect and respond to cybersecurity threats on modern networks.",
+            "image": "CyberOpsAssociateUpdate20260327-31-b70r4k.png"
+        },
+        {
+            "id": "cert-1",
+            "title": "Oracle Certified Foundations Associate: AI Foundations",
+            "organization": "Oracle University",
+            "year": "2025",
+            "date": "August 18, 2025",
+            "link": false,
+            "description": "Mastery of AI concepts including Machine Learning, Deep Learning, and Generative AI within the Oracle Cloud ecosystem.",
+            "image": "AI Foundations Associate.png"
+        },
+        {
+            "id": "cert-25",
+            "title": "Responsible Artificial Intelligence Practices",
+            "organization": "AWS Training & Certification",
+            "year": "2025",
+            "date": "August 16, 2025",
+            "link": false,
+            "description": "Understanding the ethical and responsible practices for implementing AI solutions.",
+            "image": "Responsible Artificial Intelligence Practices.png"
+        },
+        {
+            "id": "cert-21",
+            "title": "Machine Learning with Python - Level 1",
+            "organization": "IBM SkillsBuild",
+            "year": "2025",
+            "date": "July 24, 2025",
+            "link": "https://www.credly.com/badges/747f6333-98aa-4080-bad4-f65f95369744",
+            "description": "Foundational machine learning skills using Python, including supervised and unsupervised learning.",
+            "image": "IBM Machine Learning with Python - Level 1.png"
+        },
+        {
+            "id": "cert-17",
+            "title": "Data Science Foundations - Level 2 (V2)",
+            "organization": "IBM SkillsBuild",
+            "year": "2025",
+            "date": "July 28, 2025",
+            "link": "https://www.credly.com/badges/e95c40f9-8b89-4bd1-bfb2-1e22d8428994",
+            "description": "Intermediate level certification in data science foundations, authorized by IBM.",
+            "image": "IBM Data Science Foundations - Level 2.png"
+        },
+        {
+            "id": "cert-16",
+            "title": "Data Science Foundations - Level 1",
+            "organization": "IBM SkillsBuild",
+            "year": "2025",
+            "date": "July 15, 2025",
+            "link": "https://www.credly.com/badges/1e561f8d-edd8-42da-b4ca-7b862e7d2097",
+            "description": "Introductory level certification in data science foundations, authorized by IBM.",
+            "image": "IBM Data Science Foundations - Level 1.png"
+        },
+        {
+            "id": "cert-14",
+            "title": "Deep Learning with TensorFlow",
+            "organization": "Cognitive Class (IBM)",
+            "year": "2026",
+            "date": "January 15, 2026",
+            "link": "https://courses.cognitiveclass.ai/certificates/82b380cba153410e9848fbfc24edd521",
+            "description": "Practical application of deep learning using the TensorFlow framework for building neural networks.",
+            "image": "Deep Learning with Tensorflow.png"
+        },
+        {
+            "id": "cert-20",
+            "title": "Deep Learning Essentials",
+            "organization": "IBM SkillsBuild",
+            "year": "2025",
+            "date": "August 16, 2025",
+            "link": "https://www.credly.com/badges/e13692a8-7cde-4bb8-9776-f3ebce935d54",
+            "description": "Essential knowledge of deep learning techniques and neural network architectures.",
+            "image": "IBM Deep Learning Essentials.png"
+        },
+        {
+            "id": "cert-22",
+            "title": "Machine Learning with Python",
+            "organization": "Cognitive Class (IBM)",
+            "year": "2025",
+            "date": "July 27, 2025",
+            "link": "https://courses.cognitiveclass.ai/certificates/9215f212881346e5ab468bf2ea71668c",
+            "description": "Core machine learning concepts and their implementation in Python.",
+            "image": "Machine Learning with Python.png"
+        },
+        {
+            "id": "cert-4",
+            "title": "Version Control",
+            "organization": "Meta",
+            "year": "2025",
+            "date": "March 15, 2025",
+            "link": "https://coursera.org/verify/FJJHV06RU9SD",
+            "description": "Proficiency in Git and GitHub for collaborative software development, authorized by Meta.",
+            "image": "Coursera FJJHV06RU9SD.png"
+        },
+        {
+            "id": "cert-15",
+            "title": "Cybersecurity Fundamentals",
+            "organization": "IBM SkillsBuild",
+            "year": "2023",
+            "date": "December 23, 2023",
+            "link": "https://www.credly.com/badges/b44d9ea3-a9d3-4742-b3ef-3aa5aeb48a43",
+            "description": "Fundamental knowledge of cybersecurity principles, threat landscapes, and security measures.",
+            "image": "IBM Cybersecurity Fundamentals.png"
+        },
+        {
+            "id": "cert-18",
+            "title": "Data Science Methodologies",
+            "organization": "IBM SkillsBuild",
+            "year": "2025",
+            "date": "July 28, 2025",
+            "link": "https://www.credly.com/badges/9c953540-4a2e-49fa-92fa-e3d3f54bcd21",
+            "description": "Mastery of various data science methodologies for solving complex business problems.",
+            "image": "IBM Data Science Methodologies.png"
+        },
+        {
+            "id": "cert-11",
+            "title": "Data Science Methodology",
+            "organization": "Cognitive Class (IBM)",
+            "year": "2025",
+            "date": "July 28, 2025",
+            "link": "https://courses.cognitiveclass.ai/certificates/d258f7316ceb46b9a81f9386a5d31ed4",
+            "description": "Deep dive into the data science methodology and its practical application in real-world scenarios.",
+            "image": "Data Science Methodology.png"
+        },
+        {
+            "id": "cert-19",
+            "title": "Data Science Tools",
+            "organization": "IBM SkillsBuild",
+            "year": "2025",
+            "date": "July 28, 2025",
+            "link": "https://www.credly.com/badges/011018e9-80d9-49d8-9edc-7885e27daac1",
+            "description": "Proficiency in using professional data science tools and environments.",
+            "image": "IBM Data Science Tools.png"
+        },
+        {
+            "id": "cert-12",
+            "title": "Data Science Tools",
+            "organization": "Cognitive Class (IBM)",
+            "year": "2025",
+            "date": "July 25, 2025",
+            "link": "https://courses.cognitiveclass.ai/certificates/e3020c470c624c31934037106f919663",
+            "description": "Hands-on experience with popular data science tools including Jupyter, RStudio, and GitHub.",
+            "image": "Data Science Tools.png"
+        },
+        {
+            "id": "cert-10",
+            "title": "Data Science 101",
+            "organization": "IBM Developer Skills Network",
+            "year": "2025",
+            "date": "July 15, 2025",
+            "link": "https://courses.cognitiveclass.ai/certificates/5ca4d958cf5b46b0a9cb8613c932d467",
+            "description": "Foundational understanding of data science concepts, workflows, and industry applications.",
+            "image": "Data Science 101.png"
+        },
+        {
+            "id": "cert-13",
+            "title": "Deep Learning Fundamentals",
+            "organization": "Cognitive Class (DeepLearning.TV)",
+            "year": "2025",
+            "date": "August 16, 2025",
+            "link": "https://courses.cognitiveclass.ai/certificates/7832fe7c75214d17803eb6ef2f75270a",
+            "description": "Introduction to the core concepts of deep learning, neural networks, and their architectures.",
+            "image": "Deep Learning Fundamentals.png"
+        },
+        {
+            "id": "cert-3",
+            "title": "Introduction to Project Management",
+            "organization": "IBM",
+            "year": "2025",
+            "date": "March 15, 2025",
+            "link": "https://coursera.org/verify/CPTHKELA0FZW",
+            "description": "Foundational knowledge in project management methodologies and tools provided by IBM.",
+            "image": "Coursera CPTHKELA0FZW.png"
+        },
+        {
+            "id": "cert-6",
+            "title": "Project Management Foundations, Initiation, and Planning",
+            "organization": "SkillUp EdTech",
+            "year": "2025",
+            "date": "March 20, 2025",
+            "link": "https://coursera.org/verify/X611NE7CXWAH",
+            "description": "Comprehensive training on the initiation and planning phases of project management.",
+            "image": "Coursera X611NE7CXWAH.png"
+        },
+        {
+            "id": "cert-5",
+            "title": "Project Lifecycle, Information Sharing, and Risk Management",
+            "organization": "SkillUp EdTech",
+            "year": "2025",
+            "date": "March 20, 2025",
+            "link": "https://coursera.org/verify/VNNKL8SD5TB1",
+            "description": "Advanced project management course focusing on lifecycle execution and risk mitigation.",
+            "image": "Coursera VNNKL8SD5TB1.png"
+        },
+        {
+            "id": "cert-23",
+            "title": "N8N Crash Course: Automate Your Life with AI",
+            "organization": "LetsUpgrade",
+            "year": "2025",
+            "date": "July 26, 2025",
+            "link": false,
+            "description": "Learning to build AI-powered automation workflows using the n8n platform.",
+            "image": "N8N Crash Course.png"
+        }
+    ]
+}
